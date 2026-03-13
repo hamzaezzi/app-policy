@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Youtube OAuth Callback</title>
+</head>
+<body>
+  <h1>Authorization complete</h1>
+  <p>You can close this page.</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    console.log("Authorization code:", code);
+  </script>
+</body>
+</html>
